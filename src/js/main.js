@@ -55,7 +55,7 @@ const app = {
       return;
     }
     let fontSelected = selectFontFamily.value;
-    dogname.style.fontFamily = fontSelected;
+    dogName.style.fontFamily = fontSelected;
   },
 
   saveCard: () => {
