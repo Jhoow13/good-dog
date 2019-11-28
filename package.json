@@ -1,0 +1,38 @@
+{
+  "name": "good-dog",
+  "version": "1.0.0",
+  "description": "## [Clique aqui](https://jhoow13.github.io/good-dog/) para ver cachorrinhos",
+  "main": "src/index.pug",
+  "scripts": {
+    "start": "yarn run gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhoow13/good-dog.git"
+  },
+  "keywords": [],
+  "author": "Joel Silva <joelcsilva@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jhoow13/good-dog/issues"
+  },
+  "homepage": "https://github.com/Jhoow13/good-dog#readme"
+}
