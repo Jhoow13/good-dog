@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Search Engine-->
-  <meta name="author" content="Joel Silva" />
-  <meta name="description" content="" />
-  <meta name="image" content="" />
-  <meta name="keywords" content="" />
-  <link rel="icon" href="" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Open+Sans+Condensed:300|Tomorrow&amp;display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <meta name="author" content="Joel Silva">
+  <meta name="description" content="">
+  <meta name="image" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Open+Sans+Condensed:300|Tomorrow&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Dogs</title>
 </head>
 <body>
   <section class="dogbreed">
     <h1>Escolha seu dog!<span class="dogCardSaved">Dog salvo</span></h1>
-    <div class="card">
-      <img
-        class="dogImage"
-        src="http://via.placeholder.com/300"
-        alt="Imagem aleatório de cachorro ou imagem padrão cinza"
-      />
+    <div class="card"><img class="dogImage" src="http://via.placeholder.com/300" alt="Imagem aleatório de cachorro ou imagem padrão cinza">
       <div class="card-container">
         <p class="dogName"></p>
       </div>
     </div>
     <div class="card-options">
-      <input id="dogTxt" type="text" name="dogTxt" placeholder="Nome do dog" />
+      <input id="dogTxt" type="text" name="dogTxt" placeholder="Nome do dog">
       <select id="selectBreed" onchange="app.getDogImage()">
         <option disabled selected hidden>Raça</option>
       </select>
