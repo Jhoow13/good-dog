@@ -31,11 +31,7 @@ const app = {
 
     let breedSelected = selectBreed.value;
 
-    if (dogTxt.value) {
-      dogName.innerText = dogTxt.value;
-    } else {
-      dogName.innerText = localStorage.getItem("dogNameSaved");
-    }
+    app.getDogName();
 
     axios
       .get(`https://dog.ceo/api/breed/${breedSelected}/images/random`)
@@ -63,12 +59,21 @@ const app = {
     dogName.style.fontFamily = fontSelected;
   },
 
+  getDogName: () => {
+    if (dogTxt.value) {
+      dogName.innerText = dogTxt.value;
+    } else {
+      dogName.innerText = localStorage.getItem("dogNameSaved");
+    }
+  },
+
   saveCard: () => {
     localStorage.setItem("dogNameSaved", dogTxt.value);
     localStorage.setItem("dogImgSaved", dogImage.src);
     localStorage.setItem("breedSaved", selectBreed.value);
     localStorage.setItem("colorSaved", selectColor.value);
     localStorage.setItem("fontSaved", selectFontFamily.value);
+    app.getDogName();
 
     dogCardSaved.style.opacity = 1;
   }
