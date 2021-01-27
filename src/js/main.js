@@ -30,7 +30,12 @@ const app = {
     }
 
     let breedSelected = selectBreed.value;
-    dogName.innerText = dogTxt.value;
+
+    if (dogTxt.value) {
+      dogName.innerText = dogTxt.value;
+    } else {
+      dogName.innerText = localStorage.getItem("dogNameSaved");
+    }
 
     axios
       .get(`https://dog.ceo/api/breed/${breedSelected}/images/random`)
